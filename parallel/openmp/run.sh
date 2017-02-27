@@ -7,10 +7,10 @@ g++-6  -fopenmp "$@"
 
 export OMP_NUM_THREADS=1
 echo "Threads: $OMP_NUM_THREADS"
-./a.out
+time ./a.out
 
 export OMP_NUM_THREADS=64
 echo "Threads: $OMP_NUM_THREADS"
-./a.out
+time ./a.out
 
 rm a.out
