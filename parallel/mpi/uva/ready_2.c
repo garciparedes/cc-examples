@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
 
     int tag = 0;
 
-    int i;
+    int i, j;
     char *data = (char *)malloc( MENSSAGE_COUNT * sizeof(char) );
 
     MPI_Init(&argc, &argv);
@@ -25,36 +25,32 @@ int main(int argc, char *argv[]) {
     }
 
     if (world_rank == RANK_SENDER) {
-    	int buffer_size = MENSSAGE_COUNT*(sizeof(int) + MPI_BSEND_OVERHEAD);
-    	int *buffer = (int *) malloc(buffer_size);
 
         for (i = 0; i < MENSSAGE_COUNT; i++) {
             data[i] = 'a'  + i;
         }
 
-        printf("Sending...\n");
-        MPI_Buffer_attach(buffer, buffer_size);
-    	for (i = 0; i < MENSSAGE_COUNT; i++)
-    	{
-    		MPI_Bsend(&data[i], 1, MPI_INT, RANK_RECEIVER, tag, MPI_COMM_WORLD);
-    	}
-    	MPI_Buffer_detach(&buffer, &buffer_size);
-        printf("Sent!\n");
-
-    	free(buffer);
-    } else if(world_rank == RANK_RECEIVER){
-
-        printf("Receiving...\n");
+        for (j = 0; j < world_size; j++) {
+            if(j != RANK_SENDER){
+                printf("Sending to %d...\n",j);
+                for (i = 0; i < MENSSAGE_COUNT; i++)
+                {
+                    MPI_Rsend(&data[i], 1, MPI_INT, j, tag, MPI_COMM_WORLD);
+                }
+                printf("Sent to %d!\n", j);
+            }
+        }
+    } else{
+        printf("Receiving on %d...\n", world_rank);
         for (i = 0; i < MENSSAGE_COUNT; i++) {
             MPI_Recv(&data[i], 1, MPI_INT, RANK_SENDER, tag, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         }
-        printf("Received!\n");
+        printf("Received on %d!\n", world_rank);
 
         for (i = 0; i < MENSSAGE_COUNT; i++) {
             printf("%c  ", data[i]);
         }
         printf("\n");
-
     }
 
 

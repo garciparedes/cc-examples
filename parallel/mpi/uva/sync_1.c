@@ -25,23 +25,16 @@ int main(int argc, char *argv[]) {
     }
 
     if (world_rank == RANK_SENDER) {
-    	int buffer_size = MENSSAGE_COUNT*(sizeof(int) + MPI_BSEND_OVERHEAD);
-    	int *buffer = (int *) malloc(buffer_size);
-
         for (i = 0; i < MENSSAGE_COUNT; i++) {
             data[i] = 'a'  + i;
         }
 
         printf("Sending...\n");
-        MPI_Buffer_attach(buffer, buffer_size);
     	for (i = 0; i < MENSSAGE_COUNT; i++)
     	{
-    		MPI_Bsend(&data[i], 1, MPI_INT, RANK_RECEIVER, tag, MPI_COMM_WORLD);
+    		MPI_Ssend(&data[i], 1, MPI_INT, RANK_RECEIVER, tag, MPI_COMM_WORLD);
     	}
-    	MPI_Buffer_detach(&buffer, &buffer_size);
         printf("Sent!\n");
-
-    	free(buffer);
     } else if(world_rank == RANK_RECEIVER){
 
         printf("Receiving...\n");
