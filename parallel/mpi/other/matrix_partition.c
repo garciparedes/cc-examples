@@ -5,6 +5,9 @@
 #define COLS  12
 #define ROWS  8
 
+/**
+ * Code From: http://stackoverflow.com/a/7587133/3921457
+**/
 int main(int argc, char **argv) {
 
     MPI_Init(&argc, &argv);
