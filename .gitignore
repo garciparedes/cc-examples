@@ -98,4 +98,5 @@ tags
 
 # Ignore input files
 
+*.in
 *.input
