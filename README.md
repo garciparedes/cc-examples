@@ -2,7 +2,7 @@
 
 ## Description
 
-Set of awesome C/C++ Examples.
+Set of awesome C++ Examples.
 
 ## Contents
 
