@@ -23,10 +23,8 @@ int main() {
     }
     vector <string> result = cavityMap(grid);
     for (ssize_t i = 0; i < result.size(); i++) {
-        cout << result[i] << (i != result.size() - 1 ? "\n" : "");
+        cout << result[i] << '\n';
     }
-    cout << endl;
-
 
     return 0;
 }
