@@ -13,7 +13,7 @@ float averageOfTopEmployees(vector<int> rating) {
             ++n;
         }
     }
-    return ceil((s / n) * 100) / 100 ;
+    return round((s / n) * 100) / 100 ;
 }
 
 int main() {
