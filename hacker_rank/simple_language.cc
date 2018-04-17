@@ -5,7 +5,7 @@ using namespace std;
 /*
  * Complete the maximumProgramValue function below.
  */
-unsigned long long int maximumProgramValue(int n) {
+long long int maximumProgramValue(int n) {
     long long int r = 0;
     long t;
     string op;
