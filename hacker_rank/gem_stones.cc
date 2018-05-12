@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int gemstones(vector<string> arr) {
+int gem_stones(vector<string> arr) {
     unordered_set<char> global, current;
     
     unordered_set<char>::iterator it_g;
@@ -30,29 +30,14 @@ int gemstones(vector<string> arr) {
     return global.size();
 }
 
-int main()
-{
-    ofstream fout(getenv("OUTPUT_PATH"));
-
+int main() {
     int n;
     cin >> n;
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
     vector<string> arr(n);
-
-    for (int i = 0; i < n; i++) {
-        string arr_item;
-        getline(cin, arr_item);
-
-        arr[i] = arr_item;
+    for (ssize_t i = 0; i < n; i++) {
+        cin >> arr[i];
     }
-
-    int result = gemstones(arr);
-
-    fout << result << "\n";
-
-    fout.close();
-
+    cout << gem_stones(arr) << '\n';
     return 0;
 }
 
