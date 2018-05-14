@@ -17,8 +17,12 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i]; 
     }
-    for (int v : counting_sort(arr) ) {
-        cout << v << ' ';
+
+    vector<int> result = counting_sort(arr);
+    for (int i = 0; i < 100; ++i) {
+        for (int j = 0; j < result[i]; ++j) {
+            cout << i << ' ';
+        }
     }
     cout << '\n';
     return 0;
