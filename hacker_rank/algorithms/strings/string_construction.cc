@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int stringConstruction(string text) {
+int string_construction(string text) {
   set<char> distinct_chars;
   for (char c: text) {
     distinct_chars.insert(c);
@@ -19,7 +19,7 @@ int main() {
   cin >> cases;
   for (int i = 0; i < cases; i++) {
     cin >> text;
-    result = stringConstruction(text);
+    result = string_construction(text);
     cout << result << "\n";
   }
 
