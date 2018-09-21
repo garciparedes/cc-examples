@@ -4,6 +4,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(3d_surface_area              hacker_rank/algorithms/implementation/3d_surface_area.cc)
 add_executable(closest_numbers              hacker_rank/algorithms/sorting/closest_numbers.cc)
+add_executable(counting_sort_3              hacker_rank/algorithms/sorting/counting_sort_3.cc)
 add_executable(beautiful_binary_string      hacker_rank/algorithms/strings/beautiful_binary_string.cc)
 add_executable(make_it_anagram_mglines      hacker_rank/algorithms/strings/make_it_anagram_mglines.cc)
 add_executable(separate_the_numbers         hacker_rank/algorithms/strings/separate_the_numbers.cc)
