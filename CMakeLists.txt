@@ -3,6 +3,7 @@ project(cc-examples)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(3d_surface_area              hacker_rank/algorithms/implementation/3d_surface_area.cc)
+add_executable(larrys_array                 hacker_rank/algorithms/implementation/larrys_array.cc)
 add_executable(closest_numbers              hacker_rank/algorithms/sorting/closest_numbers.cc)
 add_executable(counting_sort_3              hacker_rank/algorithms/sorting/counting_sort_3.cc)
 add_executable(counting_sort_4              hacker_rank/algorithms/sorting/counting_sort_4.cc)
