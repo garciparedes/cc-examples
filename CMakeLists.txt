@@ -12,5 +12,5 @@ add_executable(beautiful_binary_string      hacker_rank/algorithms/strings/beaut
 add_executable(make_it_anagram_mglines      hacker_rank/algorithms/strings/make_it_anagram_mglines.cc)
 add_executable(separate_the_numbers         hacker_rank/algorithms/strings/separate_the_numbers.cc)
 add_executable(string_construction          hacker_rank/algorithms/strings/string_construction.cc)
-add_executable(the_love_letter_mistery      hacker_rank/algorithms/strings/the_love_letter_mistery.cc)
+add_executable(the_love_letter_mystery hacker_rank/algorithms/strings/the_love_letter_mystery.cc)
 add_executable(weighted-uniform-string      hacker_rank/algorithms/strings/weighted-uniform-string.cc)
