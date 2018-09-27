@@ -8,6 +8,7 @@ add_executable(closest_numbers              hacker_rank/algorithms/sorting/close
 add_executable(counting_sort_3              hacker_rank/algorithms/sorting/counting_sort_3.cc)
 add_executable(counting_sort_4              hacker_rank/algorithms/sorting/counting_sort_4.cc)
 add_executable(find_the_median              hacker_rank/algorithms/sorting/find_the_median.cc)
+add_executable(anagram                      hacker_rank/algorithms/strings/anagram.cc)
 add_executable(beautiful_binary_string      hacker_rank/algorithms/strings/beautiful_binary_string.cc)
 add_executable(make_it_anagram_mglines      hacker_rank/algorithms/strings/make_it_anagram_mglines.cc)
 add_executable(making_anagrams              hacker_rank/algorithms/strings/making_anagrams.cc)
