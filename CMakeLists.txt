@@ -10,6 +10,7 @@ add_executable(counting_sort_4              hacker_rank/algorithms/sorting/count
 add_executable(find_the_median              hacker_rank/algorithms/sorting/find_the_median.cc)
 add_executable(anagram                      hacker_rank/algorithms/strings/anagram.cc)
 add_executable(beautiful_binary_string      hacker_rank/algorithms/strings/beautiful_binary_string.cc)
+add_executable(game_of_thrones_1            hacker_rank/algorithms/strings/game_of_thrones_1.cc)
 add_executable(make_it_anagram_mglines      hacker_rank/algorithms/strings/make_it_anagram_mglines.cc)
 add_executable(making_anagrams              hacker_rank/algorithms/strings/making_anagrams.cc)
 add_executable(separate_the_numbers         hacker_rank/algorithms/strings/separate_the_numbers.cc)
