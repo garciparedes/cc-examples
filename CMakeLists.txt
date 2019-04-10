@@ -18,3 +18,6 @@ add_executable(sherlock_and_anagrams        hacker_rank/algorithms/strings/sherl
 add_executable(string_construction          hacker_rank/algorithms/strings/string_construction.cc)
 add_executable(the_love_letter_mystery      hacker_rank/algorithms/strings/the_love_letter_mystery.cc)
 add_executable(weighted-uniform-string      hacker_rank/algorithms/strings/weighted-uniform-string.cc)
+
+add_executable(box_it                       hacker_rank/cpp/classes/box_it.cc)
+add_executable(classes_objects              hacker_rank/cpp/classes/classes_objects.cc)
