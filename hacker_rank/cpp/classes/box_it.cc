@@ -50,15 +50,7 @@ class Box {
     out << box.getLength() << ' ' << box.getBreadth() << ' ' << box.getHeight();
     return out;
   }
+
 };
-
-int main() {
-  Box b(1, 1, 1);
-
-  Box b2(b);
-
-  cout << b2 << '\n';
-}
-
 
 
