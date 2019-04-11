@@ -1,0 +1,4 @@
+add_executable(closest_numbers closest_numbers.cc)
+add_executable(counting_sort_3 counting_sort_3.cc)
+add_executable(counting_sort_4 counting_sort_4.cc)
+add_executable(find_the_median find_the_median.cc)

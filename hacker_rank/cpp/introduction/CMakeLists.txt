@@ -1,0 +1,4 @@
+add_executable(c_tutorial_class c_tutorial_class.cc)
+add_executable(c_tutorial_strings c_tutorial_strings.cc)
+add_executable(c_tutorial_stringstream c_tutorial_stringstream.cc)
+add_executable(c_tutorial_struct c_tutorial_strings)

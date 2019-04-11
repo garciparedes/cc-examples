@@ -1,0 +1,2 @@
+add_executable(3d_surface_area 3d_surface_area.cc)
+add_executable(larrys_array larrys_array.cc)
