@@ -1,3 +1,0 @@
-add_subdirectory(implementation)
-add_subdirectory(sorting)
-add_subdirectory(strings)

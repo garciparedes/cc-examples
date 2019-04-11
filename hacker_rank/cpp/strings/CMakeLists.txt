@@ -1,1 +1,0 @@
-add_executable(attribute_parser attribute_parser.cc)

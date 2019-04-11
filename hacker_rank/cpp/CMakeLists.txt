@@ -1,3 +1,0 @@
-add_subdirectory(classes)
-add_subdirectory(introduction)
-add_subdirectory(strings)
