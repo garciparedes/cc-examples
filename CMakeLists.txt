@@ -3,4 +3,3 @@ project(cc-examples)
 set(CMAKE_CXX_STANDARD 11)
 
 add_subdirectory(google_tutorial)
-add_subdirectory(hacker_rank)
